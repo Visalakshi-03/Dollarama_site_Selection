@@ -1,0 +1,206 @@
+!Workspace
+!Version 1251
+!Charset WindowsLatin1
+Open Table "D:\mapinfo\shapes\TorontoCMA" As TorontoCMA Interactive
+Open Table "Mapinfo files\Dollarama_stores_in_Toronto_CMA" As Dollarama_stores_in_Toronto_CM Interactive
+Open Table "Mapinfo files\selected_locations" As selected_locations Interactive
+Open Window WorkspaceExplorer
+Open Window ToolManager
+Set Window ToolManager Hide
+Map From TorontoCMA
+  Position (0.0666667,1.58333) Units "in"
+  Width 7.95833 Units "in" Height 3.33333 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 3, 74, "m", -91.8666666667, 63.390675, 49, 77, 6200000, 3000000
+  Center (7202988.898,956170.9359)
+  Zoom 308.3534542 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "m"
+shade 1 with Qcl_1 values 
+  1 Brush (2,16777215,16777215) Pen (1,2,8421504) ,
+  2 Brush (2,65280,16777215) Pen (1,2,0) ,
+  3 Brush (2,255,16777215) Pen (1,2,0) ,
+  4 Brush (2,16711935,16777215) Pen (1,2,0) ,
+  5 Brush (2,16776960,16777215) Pen (1,2,0) 
+  default Brush (1,0,16777215) Pen (1,2,0)   # color 1 # 
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Spatial_id
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending on 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "NPI5EF834 (HP LaserJet MFP M139w)" Orientation Portrait Copies 1
+ Papersize 1
+Map From Dollarama_stores_in_Toronto_CM,selected_locations,TorontoCMA
+  Position (0.0666667,1.58333) Units "in"
+  Width 7.95833 Units "in" Height 3.33333 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 3, 74, "m", -91.8666666667, 63.390675, 49, 77, 6200000, 3000000
+  Center (7225560.128,944491.2187)
+  Zoom 164.1911434 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "m"
+shade 3 with Qcl_1 values 
+  1 Brush (2,16777215,16777215) Pen (1,2,0) ,
+  2 Brush (2,65280,16777215) Pen (1,2,0) ,
+  3 Brush (2,16777215,16777215) Pen (1,2,0) ,
+  4 Brush (2,16711935,16777215) Pen (1,2,0) ,
+  5 Brush (2,16777215,16777215) Pen (1,2,0) 
+  default Brush (1,0,16777215) Pen (1,2,0)   # color 1 # 
+Set Map
+  Layer 1
+    Display Global
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (34,16711680,5) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line Arrow Position Right Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Chain_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Global
+    Global Pen (1,2,0) Brush (2,255,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Spatial_id
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 4
+    Display Global
+    Global Pen (1,2,13684944) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Spatial_id
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+set legend 
+  layer 3 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending on 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "Microsoft Print to PDF" Orientation Portrait Copies 1
+ Papersize 1
+Layout Designer
+  Position (0.0666667,1.58333) Units "in"
+  Width 7.95833 Units "in" Height 3.33333 Units "in" 
+  Dim uniqueLayoutWin As Integer
+  uniqueLayoutWin = FrontWindow()
+  Dim restoreCoordSysString As String
+  restoreCoordSysString = "Set " + SessionInfo(1)
+  Set CoordSys Layout Units "in"
+  Set Layout Window uniqueLayoutWin Zoom 70 Center (9.11109,4.1994)
+Set Window FrontWindow() Printer
+ Name "Microsoft Print to PDF" Orientation Landscape Copies 1
+ Resolution 600
+ Papersize 1
+Map From Dollarama_stores_in_Toronto_CM,selected_locations,TorontoCMA
+  Position (0.225,0.158333) Units "in"
+  Width 10.5833 Units "in" Height 7.73333 Units "in" 
+  Pen (1,2,0)  Priority 1 Into Window uniqueLayoutWin
+Set Window WindowID(0) Front
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map Redraw Off
+Set Map
+  CoordSys Earth Projection 3, 74, "m", -91.8666666667, 63.390675, 49, 77, 6200000, 3000000
+  Center (7207268.388,931524.8256)
+  Zoom 98.68687627 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "m"
+shade 3 with Qcl_1 values 
+  1 Brush (2,16777215,16777215) Pen (1,2,0) ,
+  2 Brush (2,65280,16777215) Pen (1,2,0) ,
+  3 Brush (2,16777215,16777215) Pen (1,2,0) ,
+  4 Brush (2,16711935,16777215) Pen (1,2,0) ,
+  5 Brush (2,16777215,16777215) Pen (1,2,0) 
+  default Brush (1,0,16777215) Pen (1,2,0)   # color 1 # 
+Set Map
+  Layer 1
+    Display Global
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (34,16711680,5) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line Arrow Position Right Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Chain_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Global
+    Global Pen (1,2,0) Brush (2,255,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Spatial_id
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 4
+    Display Global
+    Global Pen (1,2,13684944) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Spatial_id
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Redraw On
+set legend 
+  layer 3 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending on 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "Microsoft Print to PDF" Orientation Portrait Copies 1
+ Papersize 1
+  Set CoordSys Layout Units "in"
+Set Window uniqueLayoutWin Front
+  Run Command restoreCoordSysString
+  Undim restoreCoordSysString
+  UnDim uniqueLayoutWin

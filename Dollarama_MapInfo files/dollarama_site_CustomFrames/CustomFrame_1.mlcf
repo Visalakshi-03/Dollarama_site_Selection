@@ -1,0 +1,32 @@
+<ScaleBarFrameControlInfo AssociatedMapWinID="3156" AssociatedMapWinIndex="1" AssociatedMapWinPageIndex="1" AssociatedMapWinName="TorontoCMA Map:2" AssociatedMapWindowXCoord="0.6" AssociatedMapWindowYCoord="1.4802992125984249E-16" AssociatedMapWindowWidth="9.890433070866143" AssoicatedMapWindowHeight="7.0937401574803154" FrameName="ScaleBar" LayoutPageScale="0.8" xmlns="clr-namespace:MapInfo.MiPro.Samples.LayoutScaleBarAddIn.Scalebars;assembly=LayoutScaleBarAddIn" xmlns:mit="clr-namespace:MapInfo.Types;assembly=MapInfo.Types" xmlns:mimpslsbai="clr-namespace:MapInfo.MiPro.Samples.LayoutScaleBarAddIn;assembly=LayoutScaleBarAddIn" xmlns:mpaifp="clr-namespace:MiProAddInFontPicker;assembly=MiProAddInFontPicker" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <ScaleBarFrameControlInfo.FrameHeight>
+    <mit:DimensionedValue Value="0.68624999999999992" Units="Inches" />
+  </ScaleBarFrameControlInfo.FrameHeight>
+  <ScaleBarFrameControlInfo.FrameWidth>
+    <mit:DimensionedValue Value="3.3695784845516967" Units="Inches" />
+  </ScaleBarFrameControlInfo.FrameWidth>
+  <ScaleBarFrameControlInfo.XCoord>
+    <mit:DimensionedValue Value="0.73749999999999949" Units="Inches" />
+  </ScaleBarFrameControlInfo.XCoord>
+  <ScaleBarFrameControlInfo.YCoord>
+    <mit:DimensionedValue Value="6.2895833333333329" Units="Inches" />
+  </ScaleBarFrameControlInfo.YCoord>
+  <ScaleBarFrameControlInfo.ScaleBarModelInfo>
+    <ScaleBarModelInfo RequestedScaleBarHeight="0.125" RequestedScaleBarLength="63.5" PaperWidthUnits="mm" GroundDistanceUnits="km" FontSize="12" AutomaticScaling="True" ShowCartographicScaleString="True">
+      <ScaleBarModelInfo.MapFrameInfo>
+        <mimpslsbai:LayoutMapFrameInfo MapWindowID="3156" MapLayoutFrameID="0" MapZoom="0" MapScale="0.631016" MapWindowWidth="0" MapWindowHeight="0" MapWindowName="TorontoCMA Map" MapDistanceUnits="km" />
+      </ScaleBarModelInfo.MapFrameInfo>
+      <ScaleBarModelInfo.ScaleBarStyleInfo>
+        <ScaleBarStyleInfo ScaleBarColor1="#FFFFFFFF" ScaleBarColor2="#FF000000" ScaleBarBackgroundColor="#FF000000" ScaleBarType="Solid">
+          <ScaleBarStyleInfo.ScalebarFontInfo>
+            <mpaifp:FontInfo Family="Segoe UI" Size="12" Style="Normal" Stretch="Normal" Weight="Normal" BrushColor="#FF000000">
+              <mpaifp:FontInfo.Decorations>
+                <av:TextDecorationCollection />
+              </mpaifp:FontInfo.Decorations>
+            </mpaifp:FontInfo>
+          </ScaleBarStyleInfo.ScalebarFontInfo>
+        </ScaleBarStyleInfo>
+      </ScaleBarModelInfo.ScaleBarStyleInfo>
+    </ScaleBarModelInfo>
+  </ScaleBarFrameControlInfo.ScaleBarModelInfo>
+</ScaleBarFrameControlInfo>

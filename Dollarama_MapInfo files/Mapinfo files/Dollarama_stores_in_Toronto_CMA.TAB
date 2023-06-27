@@ -1,0 +1,34 @@
+!table
+!version 700
+!charset WindowsLatin1
+
+Definition Table
+  File "D:\fresh\kfc\1.Dollarama project\Shape files\Dollarama_stores_in_Toronto_CMA_2016.dbf"
+  Type SHAPEFILE Charset "WindowsLatin1"
+  Fields 8
+    Chain_name Char (254) ;
+    Coord_x Float ;
+    Coord_y Float ;
+    Shopping_c Char (254) ;
+    Strip_id Char (254) ;
+    Store_id Char (19) ;
+    Open_date Date ;
+    Close_date Float ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Shapefile" = ""
+"\Shapefile\PersistentCache" = "FALSE"
+"\Shapefile\CacheType" = "NATIVE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 74, ""m"", -81, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)"
+"\DefaultStyles" = ""
+"\DefaultStyles\Symbol" = ""
+"\DefaultStyles\Symbol\Type" = "0"
+"\DefaultStyles\Symbol\Pointsize" = "12"
+"\DefaultStyles\Symbol\Color" = "0"
+"\DefaultStyles\Symbol\Code" = "35"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "b249da2f-b184-4f58-bbc7-1cc322278115"
+end_metadata

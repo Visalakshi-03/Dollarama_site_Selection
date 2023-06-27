@@ -1,0 +1,92 @@
+!table
+!version 700
+!charset WindowsLatin1
+
+Definition Table
+  File "D:\fresh\kfc\1.Dollarama project\Shape files\selected_locationst.dbf"
+  Type SHAPEFILE Charset "WindowsLatin1"
+  Fields 61
+    Spatial_id Char (80) ;
+    Name Char (80) ;
+    Oid1 Decimal (9, 0) ;
+    Name_1 Char (53) ;
+    Daid Decimal (8, 0) ;
+    Pop2022 Decimal (5, 0) ;
+    Mhhincome Decimal (10, 0) ;
+    Ki0_4 Decimal (4, 0) ;
+    Ki5_9 Decimal (4, 0) ;
+    In19k Decimal (3, 0) ;
+    In19_39k Decimal (4, 0) ;
+    In40_59k Decimal (3, 0) ;
+    Ri Decimal (5, 0) ;
+    Ue Decimal (3, 0) ;
+    Rhh Decimal (4, 0) ;
+    Thh Decimal (5, 0) ;
+    Terent Decimal (13, 0) ;
+    Ki0_9 Decimal (8, 0) ;
+    Hi_40k Decimal (8, 0) ;
+    Zmhhincome Decimal (17, 5) ;
+    Zri Decimal (17, 5) ;
+    Zrhh Decimal (17, 5) ;
+    Zki0_9 Decimal (17, 5) ;
+    Zhi_40k Decimal (17, 5) ;
+    Zue Decimal (17, 5) ;
+    Avrent Decimal (10, 0) ;
+    Zavrent Decimal (17, 5) ;
+    Qcl_1 Decimal (8, 0) ;
+    Qcl_2 Float ;
+    Fid_1 Decimal (9, 0) ;
+    Fid_12 Decimal (9, 0) ;
+    Spatial__1 Char (80) ;
+    Name_12 Char (80) ;
+    Oid_ Decimal (9, 0) ;
+    Name_12_13 Char (53) ;
+    Daid_1 Decimal (8, 0) ;
+    Pop2022_1 Decimal (5, 0) ;
+    Mhhincom_1 Decimal (10, 0) ;
+    Ki0_45 Decimal (4, 0) ;
+    Ki5_9_10 Decimal (4, 0) ;
+    In19k_1 Decimal (3, 0) ;
+    In19_39k_1 Decimal (4, 0) ;
+    In40_59k_1 Decimal (3, 0) ;
+    Ri_1 Decimal (5, 0) ;
+    Ue_1 Decimal (3, 0) ;
+    Rhh_1 Decimal (4, 0) ;
+    Thh_1 Decimal (5, 0) ;
+    Terent_1 Decimal (13, 0) ;
+    Ki0_9_10 Decimal (8, 0) ;
+    Hi_40k_1 Decimal (8, 0) ;
+    Zmhhinco_1 Decimal (17, 5) ;
+    Zri_1 Decimal (17, 5) ;
+    Zrhh_1 Decimal (17, 5) ;
+    Zki0_9_10 Decimal (17, 5) ;
+    Zhi_40k_1 Decimal (17, 5) ;
+    Zue_1 Decimal (17, 5) ;
+    Avrent_1 Decimal (10, 0) ;
+    Zavrent_1 Decimal (17, 5) ;
+    Qcl_12 Decimal (8, 0) ;
+    Qcl_23 Float ;
+    Count_ Decimal (10, 0) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Shapefile" = ""
+"\Shapefile\PersistentCache" = "FALSE"
+"\Shapefile\CacheType" = "NATIVE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 3, 74, ""m"", -91.8666666667, 63.390675, 49, 77, 6200000, 3000000 Bounds (-181348370.272, -181465206.98) (193748370.272, 193631533.564)"
+"\DefaultStyles" = ""
+"\DefaultStyles\Pen" = ""
+"\DefaultStyles\Pen\LineWidth" = "1"
+"\DefaultStyles\Pen\LineStyle" = "0"
+"\DefaultStyles\Pen\Color" = "0"
+"\DefaultStyles\Pen\Pattern" = "2"
+"\DefaultStyles\Brush" = ""
+"\DefaultStyles\Brush\Pattern" = "2"
+"\DefaultStyles\Brush\Forecolor" = "16777215"
+"\DefaultStyles\Brush\Backcolor" = "16777215"
+"\DefaultStyles\Brush\Transparent" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "3ba61ad3-27f5-49a2-ae2e-f62aa78e7497"
+end_metadata
